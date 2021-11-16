@@ -2,12 +2,12 @@ import telebot, requests
 from bs4 import BeautifulSoup
 from time import sleep
 #enter apikey from https://etherscan.io
-apikey = ""
+apikey = "GWQDD5TJ2ISEQBYKPGJZGMHXD3X4TK4EKZ"
 # enter public ETH Address for scan internal transaction
-public_address = ""
+public_address = "0x943f0f2b754b74631637f9e52f12591adf03c8be"
 
-channel_id = ""
-tel_token = ""
+channel_id = "-1001325599117"
+tel_token = "2112896052:AAHL0HyMK-BwWvhgMM1_hEBF-i77VZfRYVI"
 bot = telebot.TeleBot(tel_token, parse_mode=None)
 
 url = "https://api.etherscan.io/api?module=account&action=txlistinternal&address={0}&apikey={1}".format(public_address,apikey)
