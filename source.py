@@ -6,7 +6,7 @@ apikey = ""
 # enter public ETH Address for scan internal transaction
 public_address = ""
 
-channel_id = "-" 
+channel_id = "" 
 tel_token = ""
 bot = telebot.TeleBot(tel_token, parse_mode=None)
 
@@ -14,7 +14,7 @@ url = "https://api.etherscan.io/api?module=account&action=txlistinternal&address
 check_hash_url = "https://etherscan.io/tx/"
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
-#test url
+
 
 # print(url)
 hash_list = []
