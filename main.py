@@ -5,7 +5,6 @@ from config import *
 from datetime import datetime
 bot = telebot.TeleBot(bot_token, parse_mode=None)
 
-# url = "https://api.etherscan.io/api?module=account&action=txlistinternal&address={0}&apikey={1}".format(public_address,etherscan_apikey)
 
 url = "https://api.etherscan.io/api?module=account&action=txlist&address={0}&startblock=1&endblock=99999999&sort=asc&apikey={1}".format(public_address,etherscan_apikey)
 
